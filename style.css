@@ -1,0 +1,80 @@
+/*Global styles*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fauna One', serif;
+}
+h1,h2{
+    font-family: Cinzel, 'Times New Roman', Times, serif;
+}
+/* Site-Header styles */
+.site-header{
+    display: flex;
+    text-align: center;    
+    
+}
+.header-logo{
+    width: 20%;
+}
+.site-header img{
+    width: 10vw;
+    height: 10vh; 
+}
+.header-body{
+    width: 80%;        
+}
+.header-body h1{
+    font-size: 1.4rem;
+}
+
+/* Navbar styles */
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    padding: 10px;
+    background-color: peru;
+}
+.navbar-container a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-container a:hover{
+    font-style: italic;
+}
+
+/* Main-Body styles */
+.main-container{    
+    display: flex;
+}
+.body{
+    text-align: center;
+    flex-basis: 80vw;
+}
+
+/* Main-Body Sidebar styles */
+.sidebar{
+    outline: 1px solid black;
+}
+.sidebar img{
+    object-fit: contain;
+}
+
+/* Foorter styles */
+.footer-container{    
+    background-color: slategray;
+    padding: 10px;
+    text-align: center;
+}
+/* Small Screen Styles */
+@media  only screen and (max-width:600px) {
+    .main-container{        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .body{
+        text-align: center;
+        flex-basis: 100vw;
+    }
+}
